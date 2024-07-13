@@ -55,9 +55,9 @@ const GeoLocationAPI = () => {
 
     // WebSocket 연결 및 데이터 전송 함수
     useEffect(() => {
-        // const newWs = new WebSocket('ws://220.69.240.148:3333/ws'); // 새로운 WebSocket 인스턴스 생성
+        // const newWs = new WebSocket(URL); // 새로운 WebSocket 인스턴스 생성
         // test server url
-        const newWs = new WebSocket('ws://cclab.anu.ac.kr:24030/gps');
+        const newWs = new WebSocket(URL2);
         // server url
         newWs.onopen = () => {
             console.log('Connected to WebSocket server');
