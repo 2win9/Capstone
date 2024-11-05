@@ -11,8 +11,7 @@ const Homescreen = () => {
 
   const handleInput = async () => {
     const otp = otpInputs.join(''); // Combine individual OTP characters into a single string
-    // const url = 'http://220.69.240.148:3333/otp';
-    const url = 'http://cclab.anu.ac.kr:24030/user/join';
+    const url = SEVERT_URL;
     //서버 URL
 
     if (!userName || otp.length !== 6) {
